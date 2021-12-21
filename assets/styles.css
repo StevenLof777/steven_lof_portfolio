@@ -1,0 +1,273 @@
+:root {
+    --gray-0:#f9f9fa;
+    --gray-1:#eceeef;
+    --gray-2:#eceeef;
+    --gray-3:#cfd3d7;
+    --gray-4:#bfc5c9;
+    --gray-5:#adb4b9;
+    --gray-6:#98a1a8;
+    --gray-7:#98a1a8;
+    --gray-8:#606e79;
+    --gray-9:#454e55; 
+
+    --reddish:#15410a;
+    --orange:#210979;
+    
+    --gradient-1: ;
+
+    /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
+
+    --purple: #3a056e;
+    --blue: #667eea;
+
+    --fs-h1: 4rem;
+    --fs-h2: 2.0rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+
+    --ff-thin: 'Montserrat', sans-serif;
+    --ff-thick: 'Roboto', sans-serif;
+    --ff-light: 'Source Sans 3', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    /* source:  https://webgradients.com/*/
+    background: radial-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898 fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply,multiply;
+    display: block;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.intro-container {
+    background-color: white;
+}
+
+/* Citation for NavBar */
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+.navbar {
+
+
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+  
+li {
+float: right;
+font-size: var(--fs-h2);
+color: var(--purple);
+}
+
+li a {
+display: block;
+color: var(--gray-9);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: var(--gray-1);
+}
+
+
+i {
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: var(--gray-9);  
+    font-size: var(--fs-h2);
+}
+
+
+
+/* Intro */
+
+
+.intro-container {
+    margin-top: 15%;
+    /* border: solid green; */
+    background-color: transparent;
+    color: white;
+    /* margin-left: 17rem; */
+}
+
+#profile {
+    float: right;
+    height: 20rem;
+    border-radius: 15rem;
+    border: solid white .5rem ;
+    /* margin-right: 17rem; */
+}
+
+#name   {
+    font-size: var(--fs-h1);
+}
+
+#nameCaption {
+    font-size: var(--fs-h2);
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+#caption {
+    margin-top: 1rem;
+}
+
+#resume {
+    border: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: var(--gray-6);
+    width: 6rem;
+    border-radius: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 3rem;
+    text-decoration: none;
+  }
+
+#resume:hover {
+    background-color: var(--gray-8);
+}
+
+.aboutme {
+    background-color: white;
+    margin-top: 10rem;
+    padding: 1rem 0rem;
+}
+
+
+#aboutmeheader {
+    font-size: 2.5rem;
+    color: var(--gray-9);
+    border-bottom: solid var(--gray-9);
+}
+
+#aboutmetext {
+    font-size:1.5rem;
+    margin-top: 1rem;
+}
+
+/* Projects */
+
+.projects {
+    margin-top: 10rem;
+    background-color:transparent;
+    /* margin-left: 17rem;
+    margin-right: 17rem; */
+    color: white;
+}
+
+#projects {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    /* background-color: var(--gray-9); */
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    height: 400px;
+    margin: 1rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+}
+
+.cardimage {
+    background-color: rgb(58, 58, 58);
+    height: 200px;
+    margin-bottom: 15px;
+    background-image: url(/portfolio/assets/images/codetext.jpg);
+    background-size: cover;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 500ms ease;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    background-color: white;
+    bottom: 0px;
+    /* padding: 1rem 0rem; */
+}
+
+.contacts {
+    font: var(--ff-thick);
+}
+
+@media only screen and (max-width: 600px) {
+    #profile {
+        /* display: none;     */
+        height: 8rem;
+        border: solid white .2rem;
+    }
+    .intro-container {
+        margin-top: 10rem;
+    }
+    .aboutme {
+        margin-top: 5rem;
+    }
+    .projects {
+        margin-top: 5rem;
+    }
+    a  {
+        font-size: 1rem;
+    } i {
+        font-size: 1.5rem;
+    }
+    #name {
+        font-size: 2rem;
+    }
+    #nameCaption {
+        font-size: 1rem;
+    }
+    #aboutmeheader {
+        font-size: 1.5rem;
+    }
+    #aboutmetext {
+        font-size: 1rem;
+    }
+    #projects{
+        font-size: 1.5rem;
+    }  
+  }
